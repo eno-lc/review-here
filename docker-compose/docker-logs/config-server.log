@@ -73,3 +73,4 @@
 2022-12-16 21:11:03 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
 2022-12-16 21:11:05 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-1308792588842921373/config-client-twitter_to_kafka.yml
 2022-12-16 21:11:05 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: file:/tmp/config-repo-1308792588842921373/config-client.yml
+2022-12-16 21:15:11 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
