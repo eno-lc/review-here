@@ -1,0 +1,3 @@
+com\microservices\demo\elastic\model\index\IndexModel.class
+com\microservices\demo\elastic\model\index\impl\TwitterIndexModel$TwitterIndexModelBuilder.class
+com\microservices\demo\elastic\model\index\impl\TwitterIndexModel.class

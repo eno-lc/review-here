@@ -1,0 +1,5 @@
+com\microservices\demo\elastic\index\client\service\impl\TwitterElasticIndexClient.class
+com\microservices\demo\elastic\index\client\service\impl\TwitterElasticRepositoryIndexClient.class
+com\microservices\demo\elastic\index\client\util\ElasticIndexUtil.class
+com\microservices\demo\elastic\index\client\service\ElasticIndexClient.class
+com\microservices\demo\elastic\index\client\repository\TwitterElasticsearchIndexRepository.class

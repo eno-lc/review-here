@@ -1,0 +1,4 @@
+com\microservices\demo\kafka\to\elastic\service\consumer\KafkaConsumer.class
+com\microservices\demo\kafka\to\elastic\service\consumer\impl\TwitterKafkaConsumer.class
+com\microservices\demo\kafka\to\elastic\service\transformer\AvroToElasticModelTransformer.class
+com\microservices\demo\kafka\to\elastic\service\KafkaToElasticServiceApplication.class
