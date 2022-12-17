@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="elastic-index-client" />
         <module name="elastic-config" />
+        <module name="common-util" />
         <module name="kafka-model" />
         <module name="kafka-consumer" />
         <module name="kafka-producer" />
@@ -18,6 +19,8 @@
         <module name="app-config-data" />
         <module name="kafka" />
         <module name="common-config" />
+        <module name="elastic-query-client" />
+        <module name="elastic-query-service" />
         <module name="twitter-to-kafka-service" />
         <module name="elastic-model" />
       </profile>
@@ -27,17 +30,21 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="app-config-data" options="-parameters" />
       <module name="common-config" options="-parameters" />
+      <module name="common-util" options="-parameters" />
       <module name="config-server" options="-parameters" />
-      <module name="elastic" options="" />
+      <module name="elastic" options="-parameters" />
       <module name="elastic-config" options="-parameters" />
       <module name="elastic-index-client" options="-parameters" />
       <module name="elastic-model" options="-parameters" />
+      <module name="elastic-query-client" options="-parameters" />
+      <module name="elastic-query-service" options="-parameters" />
       <module name="kafka" options="-parameters" />
       <module name="kafka-admin" options="-parameters" />
       <module name="kafka-consumer" options="-parameters" />
       <module name="kafka-model" options="-parameters" />
       <module name="kafka-producer" options="-parameters" />
       <module name="kafka-to-elastic-service" options="-parameters" />
+      <module name="microservices-demo" options="-parameters" />
       <module name="twitter-to-kafka-service" options="-parameters" />
     </option>
   </component>
