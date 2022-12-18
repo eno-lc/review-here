@@ -14,16 +14,16 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-
     private final UserConfigData userConfigData;
 
-    public WebSecurityConfig(UserConfigData userConfigData) {
-        this.userConfigData = userConfigData;
+    public WebSecurityConfig(UserConfigData userData) {
+        this.userConfigData = userData;
     }
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.httpBasic()
+        http
+                .httpBasic()
                 .and()
                 .authorizeRequests()
                 .antMatchers("/**").hasRole("USER")
@@ -39,10 +39,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .roles(userConfigData.getRoles());
     }
 
-
     @Bean
     protected PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
 
 }
