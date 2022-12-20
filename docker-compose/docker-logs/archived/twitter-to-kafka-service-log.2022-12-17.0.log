@@ -1,0 +1,536 @@
+2022-12-17 13:52:18 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://config-server:8888
+2022-12-17 13:52:18 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=543b7dc603a0abd4ef2c44e17191eea25d6ec2ac, state=null
+2022-12-17 13:52:18 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-17 13:52:19 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - The following profiles are active: twitter_to_kafka
+2022-12-17 13:52:19 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c5a84fa7-0917-325c-be3d-318611730719
+2022-12-17 13:52:19 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$e9d316a1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 13:52:20 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-17 13:52:20 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-17 13:52:20 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-17 13:52:20 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1671285140190
+2022-12-17 13:52:20 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 77ac06b2-d869-438c-af07-237db3600079
+
+2022-12-17 13:52:21 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8181
+2022-12-17 13:52:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 5.39 seconds (JVM running for 5.918)
+2022-12-17 13:52:21 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2022-12-17 13:52:21 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-12-17 13:52:21 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2022-12-17 13:52:21 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-12-17 13:52:21 [main] INFO  c.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2022-12-17 13:52:21 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2022-12-17 13:52:24 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-12-17 13:54:01 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @kbutisreal ????????????????????????????????????????????????????????? sending to kafka topic twitter-topic
+2022-12-17 13:54:01 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 733851870, "id": 1604112330694230017, "text": "@kbutisreal ?????????????????????????????????????????????????????????", "createdAt": 1671285157000}' to topic='twitter-topic'
+2022-12-17 13:54:01 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2022-12-17 13:54:01 [main] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://schema-registry:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-17 13:54:01 [main] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2022-12-17 13:54:01 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-17 13:54:01 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-17 13:54:01 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1671285241386
+2022-12-17 13:54:01 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: DR9iLg8vSwKF_tAktyhKag
+2022-12-17 13:54:01 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-17 13:54:01 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Closing kafka producer!
+2022-12-17 13:54:01 [main] INFO  o.a.k.clients.producer.KafkaProducer - [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
+2022-12-17 13:54:03 [main] ERROR o.s.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:798)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: org.apache.kafka.common.errors.SerializationException: Error registering Avro schema: {"type":"record","name":"TwitterAvroModel","namespace":"com.microservices.demo.kafka.avro.model","fields":[{"name":"userId","type":"long"},{"name":"id","type":"long"},{"name":"text","type":["null",{"type":"string","avro.java.string":"String"}]},{"name":"createdAt","type":["null","long"],"logicalType":["null","date"]}]}
+Caused by: io.confluent.kafka.schemaregistry.client.rest.exceptions.RestClientException: Register schema operation failed while writing to the Kafka store io.confluent.kafka.schemaregistry.rest.exceptions.RestSchemaRegistryStoreException: Register schema operation failed while writing to the Kafka store
+io.confluent.kafka.schemaregistry.rest.exceptions.RestSchemaRegistryStoreException: Register schema operation failed while writing to the Kafka store
+	at io.confluent.kafka.schemaregistry.rest.exceptions.Errors.storeException(Errors.java:81)
+	at io.confluent.kafka.schemaregistry.rest.resources.SubjectVersionsResource.register(SubjectVersionsResource.java:169)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory.lambda$static$0(ResourceMethodInvocationHandlerFactory.java:76)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:148)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:191)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$VoidOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:183)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:103)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:493)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:415)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:104)
+	at org.glassfish.jersey.server.ServerRuntime$1.run(ServerRuntime.java:277)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:272)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:268)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:316)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:298)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:268)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:289)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:256)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:703)
+	at org.glassfish.jersey.servlet.WebComponent.serviceImpl(WebComponent.java:416)
+	at org.glassfish.jersey.servlet.ServletContainer.serviceImpl(ServletContainer.java:409)
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:584)
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:525)
+	at org.glassfish.jersey.servlet.ServletContainer.doFilter(ServletContainer.java:462)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:533)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1595)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1317)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:473)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1564)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1219)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.StatisticsHandler.handle(StatisticsHandler.java:169)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:219)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:531)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:352)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:281)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:102)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:762)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:680)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.confluent.kafka.schemaregistry.exceptions.SchemaRegistryStoreException: Error while registering the schema in the backend Kafka store
+	at io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry.register(KafkaSchemaRegistry.java:374)
+	at io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry.registerOrForward(KafkaSchemaRegistry.java:390)
+	at io.confluent.kafka.schemaregistry.rest.resources.SubjectVersionsResource.register(SubjectVersionsResource.java:163)
+	... 51 more
+Caused by: io.confluent.kafka.schemaregistry.storage.exceptions.StoreException: Put operation failed while waiting for an ack from Kafka
+	at io.confluent.kafka.schemaregistry.storage.KafkaStore.put(KafkaStore.java:325)
+	at io.confluent.kafka.schemaregistry.storage.KafkaSchemaRegistry.register(KafkaSchemaRegistry.java:365)
+	... 53 more
+Caused by: java.util.concurrent.ExecutionException: org.apache.kafka.common.errors.NotLeaderForPartitionException: This server is not the leader for that topic-partition.
+	at org.apache.kafka.clients.producer.internals.FutureRecordMetadata.valueOrError(FutureRecordMetadata.java:94)
+	at org.apache.kafka.clients.producer.internals.FutureRecordMetadata.get(FutureRecordMetadata.java:77)
+	at org.apache.kafka.clients.producer.internals.FutureRecordMetadata.get(FutureRecordMetadata.java:29)
+	at io.confluent.kafka.schemaregistry.storage.KafkaStore.put(KafkaStore.java:316)
+	... 54 more
+Caused by: org.apache.kafka.common.errors.NotLeaderForPartitionException: This server is not the leader for that topic-partition.
+; error code: 50001
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.sendHttpRequest(RestService.java:292)
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.httpRequest(RestService.java:351)
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:494)
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:485)
+	at io.confluent.kafka.schemaregistry.client.rest.RestService.registerSchema(RestService.java:458)
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.registerAndGetId(CachedSchemaRegistryClient.java:206)
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:268)
+	at io.confluent.kafka.schemaregistry.client.CachedSchemaRegistryClient.register(CachedSchemaRegistryClient.java:244)
+	at io.confluent.kafka.serializers.AbstractKafkaAvroSerializer.serializeImpl(AbstractKafkaAvroSerializer.java:74)
+	at io.confluent.kafka.serializers.KafkaAvroSerializer.serialize(KafkaAvroSerializer.java:59)
+	at org.apache.kafka.common.serialization.Serializer.serialize(Serializer.java:62)
+	at org.apache.kafka.clients.producer.KafkaProducer.doSend(KafkaProducer.java:902)
+	at org.apache.kafka.clients.producer.KafkaProducer.send(KafkaProducer.java:862)
+	at org.springframework.kafka.core.DefaultKafkaProducerFactory$CloseSafeProducer.send(DefaultKafkaProducerFactory.java:782)
+	at org.springframework.kafka.core.KafkaTemplate.doSend(KafkaTemplate.java:563)
+	at org.springframework.kafka.core.KafkaTemplate.send(KafkaTemplate.java:369)
+	at com.microservices.demo.kafka.producer.config.service.impl.TwitterKafkaProducer.send(TwitterKafkaProducer.java:31)
+	at com.microservices.demo.kafka.producer.config.service.impl.TwitterKafkaProducer.send(TwitterKafkaProducer.java:16)
+	at com.microservices.demo.twitter.to.kafka.service.listener.TwitterKafkaStatusListener.onStatus(TwitterKafkaStatusListener.java:36)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2StreamHelper.connectStream(TwitterV2StreamHelper.java:89)
+	at com.microservices.demo.twitter.to.kafka.service.runner.impl.TwitterV2KafkaStreamRunner.start(TwitterV2KafkaStreamRunner.java:37)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.run(TwitterToKafkaServiceApplication.java:35)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:795)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:779)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication.main(TwitterToKafkaServiceApplication.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2022-12-17 13:55:23 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://config-server:8888
+2022-12-17 13:55:23 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=twitter-to-kafka-service,config-client, profiles=[twitter_to_kafka], label=null, version=543b7dc603a0abd4ef2c44e17191eea25d6ec2ac, state=null
+2022-12-17 13:55:23 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-twitter_to_kafka.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-17 13:55:23 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - The following profiles are active: twitter_to_kafka
+2022-12-17 13:55:24 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c5a84fa7-0917-325c-be3d-318611730719
+2022-12-17 13:55:24 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.retry.annotation.RetryConfiguration' of type [org.springframework.retry.annotation.RetryConfiguration$$EnhancerBySpringCGLIB$$4de7ce5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-17 13:55:24 [main] INFO  o.a.k.c.admin.AdminClientConfig - AdminClientConfig values: 
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	client.dns.lookup = default
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2022-12-17 13:55:24 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-17 13:55:24 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-17 13:55:24 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1671285324854
+2022-12-17 13:55:25 [main] INFO  o.s.b.a.s.r.ReactiveUserDetailsServiceAutoConfiguration - 
+
+Using generated security password: ffd14f54-4b98-4405-a669-69c77273e636
+
+2022-12-17 13:55:39 [main] INFO  o.s.b.w.e.netty.NettyWebServer - Netty started on port(s): 8181
+2022-12-17 13:55:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 16.78 seconds (JVM running for 17.26)
+2022-12-17 13:55:39 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2022-12-17 13:55:39 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Creating 1 topics(s), attempt 0
+2022-12-17 13:55:39 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Create topic result [KafkaFuture{value=null,exception=null,done=false}]
+2022-12-17 13:55:39 [main] INFO  c.m.d.k.a.client.KafkaAdminClient - Reading kafka topic [twitter-topic], attempt 0
+2022-12-17 13:55:39 [main] INFO  c.m.d.t.t.k.s.i.i.KafkaStreamInitializer - Topics with name twitter-topic is ready for operations!
+2022-12-17 13:55:39 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2KafkaStreamRunner - Created filter for twitter stream for keywords: [Java, Microservices, Kafka, Elasticsearch]
+2022-12-17 13:55:42 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterV2StreamHelper - Created rules for twitter stream Java
+2022-12-17 13:56:49 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Read Building Java Programs and enjoy some apple cider out of a irish coffee glass. sending to kafka topic twitter-topic
+2022-12-17 13:56:49 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1368800100705734659, "id": 1604113100285673472, "text": "Read Building Java Programs and enjoy some apple cider out of a irish coffee glass.", "createdAt": 1671285340000}' to topic='twitter-topic'
+2022-12-17 13:56:49 [main] INFO  o.a.k.c.producer.ProducerConfig - ProducerConfig values: 
+	acks = -1
+	batch.size = 1638400
+	bootstrap.servers = [kafka-broker-1:9092, kafka-broker-2:9092, kafka-broker-3:9092]
+	buffer.memory = 33554432
+	client.dns.lookup = default
+	client.id = producer-1
+	compression.type = snappy
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 120000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.LongSerializer
+	linger.ms = 5
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 60000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class io.confluent.kafka.serializers.KafkaAvroSerializer
+
+2022-12-17 13:56:49 [main] INFO  i.c.k.s.KafkaAvroSerializerConfig - KafkaAvroSerializerConfig values: 
+	bearer.auth.token = [hidden]
+	proxy.port = -1
+	schema.reflection = false
+	auto.register.schemas = true
+	max.schemas.per.subject = 1000
+	basic.auth.credentials.source = URL
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	schema.registry.url = [http://schema-registry:8081]
+	basic.auth.user.info = [hidden]
+	proxy.host = 
+	use.latest.version = false
+	schema.registry.basic.auth.user.info = [hidden]
+	bearer.auth.credentials.source = STATIC_TOKEN
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2022-12-17 13:56:49 [main] WARN  o.a.k.c.producer.ProducerConfig - The configuration 'internal.auto.downgrade.txn.commit' was supplied but isn't a known config.
+2022-12-17 13:56:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 2.5.1
+2022-12-17 13:56:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: 0efa8fb0f4c73d92
+2022-12-17 13:56:49 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1671285409980
+2022-12-17 13:56:49 [kafka-producer-network-thread | producer-1] INFO  org.apache.kafka.clients.Metadata - [Producer clientId=producer-1] Cluster ID: DR9iLg8vSwKF_tAktyhKag
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @dacey_nolan It is so normal, in the past, someone asked me, how many experience did I have with Java? I applied for a  Frontend Dev JavaScript position, ???????????? sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 112913149, "id": 1604113170351767553, "text": "@dacey_nolan It is so normal, in the past, someone asked me, how many experience did I have with Java? I applied for a  Frontend Dev JavaScript position, ????????????", "createdAt": 1671285357000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @kozawa ????????????????????? sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 5127661, "id": 1604113185203576832, "text": "@kozawa ?????????????????????", "createdAt": 1671285360000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text for Hacking Services #ArtificialIntelligence
+#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Python #TensorFlow #Java #JavaScript #CloudComputing #DevCommunity #DataScientist #Programming #DigitalTransformation #Cloud #MachineLearning #100DaysOfCode sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 2350903291, "id": 1604113207827865600, "text": "for Hacking Services #ArtificialIntelligence\n#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Python #TensorFlow #Java #JavaScript #CloudComputing #DevCommunity #DataScientist #Programming #DigitalTransformation #Cloud #MachineLearning #100DaysOfCode", "createdAt": 1671285366000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ????????????Java???????????????????????????????????? sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 61180644, "id": 1604113222189342720, "text": "????????????Java????????????????????????????????????", "createdAt": 1671285369000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Hackwithliam: for Hacking Services #ArtificialIntelligence
+#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Python #TensorFlow??? sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1582584003563225089, "id": 1604113230741344256, "text": "RT @Hackwithliam: for Hacking Services #ArtificialIntelligence\n#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Python #TensorFlow???", "createdAt": 1671285371000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text quero ler "Kafka ?? Beira-Mar" https://t.co/HevGCxIONd #skoob sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 249325493, "id": 1604113246876831750, "text": "quero ler \"Kafka ?? Beira-Mar\" https://t.co/HevGCxIONd #skoob", "createdAt": 1671285375000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Brigade01Arwan1 @gibran_tweet @masjack_java Gaspol sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1103137420373942273, "id": 1604113249209044992, "text": "@Brigade01Arwan1 @gibran_tweet @masjack_java Gaspol", "createdAt": 1671285376000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @AmschelKavka: I saw a duck standing in the water at the river's edge. 
+
+Franz Kafka, 1911. sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1007270730994733056, "id": 1604113257551527937, "text": "RT @AmschelKavka: I saw a duck standing in the water at the river's edge. \n\nFranz Kafka, 1911.", "createdAt": 1671285378000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @ThatDario: Si la metamorfosis de kafka hubiera ido sobre m?? me habr??a transformado en esto https://t.co/ed6qv1Rcu9 sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1571210648, "id": 1604113275330904064, "text": "RT @ThatDario: Si la metamorfosis de kafka hubiera ido sobre m?? me habr??a transformado en esto https://t.co/ed6qv1Rcu9", "createdAt": 1671285382000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @Hackwithliam: for Hacking Services #ArtificialIntelligence
+#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Python #TensorFlow??? sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1255022272412172288, "id": 1604113280787775488, "text": "RT @Hackwithliam: for Hacking Services #ArtificialIntelligence\n#BigData #Analytics #DataScience #AI #IoT #IIoT #PyTorch #Python #TensorFlow???", "createdAt": 1671285383000}' to topic='twitter-topic'
+2022-12-17 13:56:50 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @hackSultan I???m Jay I???m currently learning mobile app dev (Java) and Python (for data science and Ai). I mostly take online tutorials(From YouTube and Udemy ???for python???) and this really really demands a lot of Data connection. 
+I???m still a student (Medical student) but I love Tech sending to kafka topic twitter-topic
+2022-12-17 13:56:50 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1103399027033497600, "id": 1604113306033217537, "text": "@hackSultan I???m Jay I???m currently learning mobile app dev (Java) and Python (for data science and Ai). I mostly take online tutorials(From YouTube and Udemy ???for python???) and this really really demands a lot of Data connection. \nI???m still a student (Medical student) but I love Tech", "createdAt": 1671285389000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @Just_Java_Kitty @PeachyArts1031 To be honest Eoin is a lil bit jaded when it comes to the gods. Between the primals and all the suffering he has seen... he doesn't put his faith in a higher power; he thinks if you want things to be better, if people need help, you don't pray, you act. sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1513665160333996033, "id": 1604113359997382656, "text": "@Just_Java_Kitty @PeachyArts1031 To be honest Eoin is a lil bit jaded when it comes to the gods. Between the primals and all the suffering he has seen... he doesn't put his faith in a higher power; he thinks if you want things to be better, if people need help, you don't pray, you act.", "createdAt": 1671285402000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @dyoshimitsu ??????????????????????????????????????? sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 94293281, "id": 1604113369123807232, "text": "@dyoshimitsu ???????????????????????????????????????", "createdAt": 1671285404000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text I???m getting old. I spent Friday night eating ice cream, watching a movie, and then listening to Kafka???s The Trial until I fell asleep. My friends were partying, and I don???t feel like I have missed a thing. sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1590470248477724673, "id": 1604113374052089857, "text": "I???m getting old. I spent Friday night eating ice cream, watching a movie, and then listening to Kafka???s The Trial until I fell asleep. My friends were partying, and I don???t feel like I have missed a thing.", "createdAt": 1671285406000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text untitled https://t.co/cwagT3Ryon sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1565189950097821696, "id": 1604113376778518529, "text": "untitled https://t.co/cwagT3Ryon", "createdAt": 1671285406000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @SmileFckrs: Java, Joints, & JPGs 
+is proud to be hosting the 
+1st Annual ???BAYC Ladies???meetup!  
+
+ticket details coming soon! 
+*VIP & Sp??? sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 889372088842297344, "id": 1604113390015741960, "text": "RT @SmileFckrs: Java, Joints, & JPGs \nis proud to be hosting the \n1st Annual ???BAYC Ladies???meetup!  \n\nticket details coming soon! \n*VIP & Sp???", "createdAt": 1671285409000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Java Methods A&AB, AP Edition XH48YS0
+
+https://t.co/DeytPIYP45 https://t.co/c0qbqWeUmN sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1574978441216069632, "id": 1604113427898802178, "text": "Java Methods A&AB, AP Edition XH48YS0\n\nhttps://t.co/DeytPIYP45 https://t.co/c0qbqWeUmN", "createdAt": 1671285418000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ??????????????????:2?????? (?????????????????????????????????)
+
+????????????????????????????????????????????????????????????????????? ???????????????????????????????????????183???BDMDBM??? ??????????????????????????????????????? BDM-01???
+?????????:??????????????????
+
+??????:??6,930(22:57)
+
+https://t.co/umcVlLdL5O sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1358806251077922816, "id": 1604113440448315392, "text": "??????????????????:2?????? (?????????????????????????????????)\n\n????????????????????????????????????????????????????????????????????? ???????????????????????????????????????183???BDMDBM??? ??????????????????????????????????????? BDM-01???\n?????????:??????????????????\n\n??????:??6,930(22:57)\n\nhttps://t.co/umcVlLdL5O", "createdAt": 1671285421000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ?????????????????????2??????(??????????????????)
+
+??????????????????????????????????????? Z590 AORUS MASTER Rev.1.0 Z590-AORUS-MASTER-Rev.1.0???
+?????????:GIGABYTE
+
+??????:??14,980???
+??????????????????????????(22:57)
+
+https://t.co/BxcBHGiZKN sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1375961552122044417, "id": 1604113442721632256, "text": "?????????????????????2??????(??????????????????)\n\n??????????????????????????????????????? Z590 AORUS MASTER Rev.1.0 Z590-AORUS-MASTER-Rev.1.0???\n?????????:GIGABYTE\n\n??????:??14,980???\n??????????????????????????(22:57)\n\nhttps://t.co/BxcBHGiZKN", "createdAt": 1671285422000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text Bagaimana Java bekerja sama dengan JavaScript di browser?
+Bikin Applet pake Java, embed di HTML, manipulasi pake JavaScript ???? https://t.co/zC9fhRsBno sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 102584292, "id": 1604113441996017665, "text": "Bagaimana Java bekerja sama dengan JavaScript di browser?\nBikin Applet pake Java, embed di HTML, manipulasi pake JavaScript ???? https://t.co/zC9fhRsBno", "createdAt": 1671285422000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text L???approccio gastronomico per le festivit?? nei racconti dell???autore novecentesco del Deserto dei Tartari, definito il "Kafka italiano"
+#dinobuzzati #natale #libri
+https://t.co/w5qsBMgjy0 sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1082275070184247296, "id": 1604113446924173312, "text": "L???approccio gastronomico per le festivit?? nei racconti dell???autore novecentesco del Deserto dei Tartari, definito il \"Kafka italiano\"\n#dinobuzzati #natale #libri\nhttps://t.co/w5qsBMgjy0", "createdAt": 1671285423000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @hackSultan and innovation that???s why I entered into the Tech community. 
+I Just want to contribute in solving problems with the little I can. sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1103399027033497600, "id": 1604113448379588608, "text": "@hackSultan and innovation that???s why I entered into the Tech community. \nI Just want to contribute in solving problems with the little I can.", "createdAt": 1671285423000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text ???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????  ???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????  ????????????????????????? sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1424683011006603272, "id": 1604113470714130434, "text": "???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????  ???????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????  ?????????????????????????", "createdAt": 1671285429000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text @remon247011 ???????????????????????? sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1571653037944623104, "id": 1604113481619603456, "text": "@remon247011 ????????????????????????", "createdAt": 1671285431000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @salimafillah: Reliefs in Mantingan Mosque, Jepara, Central Java, Indonesia. This Mosque was designed and built by a Chinese Muslim name??? sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1508819223178772480, "id": 1604113491992129536, "text": "RT @salimafillah: Reliefs in Mantingan Mosque, Jepara, Central Java, Indonesia. This Mosque was designed and built by a Chinese Muslim name???", "createdAt": 1671285434000}' to topic='twitter-topic'
+2022-12-17 13:57:31 [main] INFO  c.m.d.t.t.k.s.l.TwitterKafkaStatusListener - Received status text RT @CucsmanM: Passion Java is way smarter than many Zanu Pf stooges, he saw a chance to make money and capitalized it, now anosvika ku stat??? sending to kafka topic twitter-topic
+2022-12-17 13:57:31 [main] INFO  c.m.d.k.p.c.s.i.TwitterKafkaProducer - Sending message='{"userId": 1521832426963677184, "id": 1604113508530065409, "text": "RT @CucsmanM: Passion Java is way smarter than many Zanu Pf stooges, he saw a chance to make money and capitalized it, now anosvika ku stat???", "createdAt": 1671285438000}' to topic='twitter-topic'

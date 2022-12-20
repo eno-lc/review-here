@@ -45,6 +45,7 @@
       <module name="kafka-producer" options="-parameters" />
       <module name="kafka-to-elastic-service" options="-parameters" />
       <module name="microservices-demo" options="-parameters" />
+      <module name="review-project-main" options="" />
       <module name="twitter-to-kafka-service" options="-parameters" />
     </option>
   </component>
