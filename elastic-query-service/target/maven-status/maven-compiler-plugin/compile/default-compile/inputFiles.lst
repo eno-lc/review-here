@@ -1,0 +1,11 @@
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\business\impl\TwitterElasticQueryService.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\config\WebSecurityConfig.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\model\ElasticQueryServiceResponseModelV2.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\model\ElasticQueryServiceRequestModel.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\api\error\handler\ElasticQueryServiceErrorHandler.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\transformer\ElasticToResponseModelTransformer.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\ElasticQueryServiceApplication.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\model\assembler\ElasticQueryServiceResponseModelAssembler.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\model\ElasticQueryServiceResponseModel.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\api\ElasticDocumentController.java
+C:\Users\Sindroma\Desktop\review-project-main\elastic-query-service\src\main\java\com\microservices\demo\elastic\query\service\business\ElasticQueryService.java

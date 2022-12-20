@@ -1,0 +1,6 @@
+com\microservices\demo\elastic\query\client\exception\ElasticQueryClientException.class
+com\microservices\demo\elastic\query\client\service\ElasticQueryClient.class
+com\microservices\demo\elastic\query\client\util\ElasticQueryUtil.class
+com\microservices\demo\elastic\query\client\service\impl\TwitterElasticRepositoryQueryClient.class
+com\microservices\demo\elastic\query\client\service\impl\TwitterElasticQueryClient.class
+com\microservices\demo\elastic\query\client\repository\TwitterElasticsearchQueryRepository.class

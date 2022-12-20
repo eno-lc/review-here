@@ -1,0 +1,14 @@
+com\microservices\demo\elastic\query\service\business\impl\TwitterElasticQueryService.class
+com\microservices\demo\elastic\query\service\model\ElasticQueryServiceResponseModel.class
+com\microservices\demo\elastic\query\service\model\ElasticQueryServiceResponseModel$ElasticQueryServiceResponseModelBuilder.class
+com\microservices\demo\elastic\query\service\model\ElasticQueryServiceRequestModel.class
+com\microservices\demo\elastic\query\service\business\ElasticQueryService.class
+com\microservices\demo\elastic\query\service\model\ElasticQueryServiceRequestModel$ElasticQueryServiceRequestModelBuilder.class
+com\microservices\demo\elastic\query\service\model\assembler\ElasticQueryServiceResponseModelAssembler.class
+com\microservices\demo\elastic\query\service\api\error\handler\ElasticQueryServiceErrorHandler.class
+com\microservices\demo\elastic\query\service\api\ElasticDocumentController.class
+com\microservices\demo\elastic\query\service\model\ElasticQueryServiceResponseModelV2.class
+com\microservices\demo\elastic\query\service\config\WebSecurityConfig.class
+com\microservices\demo\elastic\query\service\model\ElasticQueryServiceResponseModelV2$ElasticQueryServiceResponseModelV2Builder.class
+com\microservices\demo\elastic\query\service\ElasticQueryServiceApplication.class
+com\microservices\demo\elastic\query\service\transformer\ElasticToResponseModelTransformer.class

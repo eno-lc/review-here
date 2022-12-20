@@ -496,3 +496,68 @@ java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the i
 2022-12-20 13:48:47 [http-nio-8184-exec-3] INFO  c.m.d.e.q.w.c.api.QueryController - Querying with text kafka
 2022-12-20 13:48:47 [http-nio-8184-exec-3] INFO  c.m.d.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text kafka
 2022-12-20 13:50:26 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-20 15:17:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 15:17:21 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 15:17:21 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=b74d589740e2608455710bcaac2187cb274dd778, state=null
+2022-12-20 15:17:21 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 15:17:21 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 15:17:22 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e013ba55-1a8d-3523-b9db-ecb4ac82f8a1
+2022-12-20 15:17:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-20 15:17:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-20 15:17:22 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-20 15:17:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-12-20 15:17:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-12-20 15:17:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 15:17:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 15:17:22 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-12-20 15:17:22 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 743 ms
+2022-12-20 15:17:22 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7971c2a9, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b03cbad, org.springframework.security.web.header.HeaderWriterFilter@691541bc, org.springframework.security.web.csrf.CsrfFilter@685f5d0d, org.springframework.security.web.authentication.logout.LogoutFilter@5eed6dfb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@646cd766, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c313224, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7ab2a07e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fd39436, org.springframework.security.web.session.SessionManagementFilter@14b275bd, org.springframework.security.web.access.ExceptionTranslationFilter@29962b2f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ec88f9e]
+2022-12-20 15:17:23 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-20 15:17:23 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-12-20 15:17:23 [main] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it to the classpath.
+2022-12-20 15:17:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2022-12-20 15:17:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elastic-query-web-client'
+2022-12-20 15:17:23 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 3.981 seconds (JVM running for 4.792)
+2022-12-20 15:17:42 [http-nio-8184-exec-1] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-20 15:17:42 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-20 15:17:42 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-12-20 15:17:52 [http-nio-8184-exec-6] INFO  c.m.d.e.q.w.c.api.QueryController - Querying with text test
+2022-12-20 15:17:52 [http-nio-8184-exec-6] INFO  c.m.d.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text test
+2022-12-20 15:18:27 [http-nio-8184-exec-5] INFO  c.m.d.e.q.w.c.api.QueryController - Querying with text kafka
+2022-12-20 15:18:27 [http-nio-8184-exec-5] INFO  c.m.d.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text kafka
+2022-12-20 15:19:07 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-20 15:32:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 15:32:50 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 15:32:51 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=b74d589740e2608455710bcaac2187cb274dd778, state=null
+2022-12-20 15:32:51 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 15:32:51 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 15:32:51 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=e013ba55-1a8d-3523-b9db-ecb4ac82f8a1
+2022-12-20 15:32:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-20 15:32:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactorDeferringLoadBalancerFilterConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-20 15:32:51 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'reactorDeferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-12-20 15:32:51 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-12-20 15:32:51 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-12-20 15:32:51 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 15:32:51 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 15:32:52 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-12-20 15:32:52 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 698 ms
+2022-12-20 15:32:52 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'queryController' defined in file [C:\Users\Sindroma\Desktop\review-project-main - Copy\elastic-query-web-client\target\classes\com\microservices\demo\elastic\query\web\client\api\QueryController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterElasticQueryWebClient' defined in file [C:\Users\Sindroma\Desktop\review-project-main - Copy\elastic-query-web-client\target\classes\com\microservices\demo\elastic\query\web\client\service\impl\TwitterElasticQueryWebClient.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'elastic-query-service' defined in file [C:\Users\Sindroma\Desktop\review-project-main - Copy\elastic-query-web-client\target\classes\com\microservices\demo\elastic\query\web\client\config\WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-12-20 15:32:52 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-12-20 15:32:52 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-20 15:32:52 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.web.client.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClient' in your configuration.
+

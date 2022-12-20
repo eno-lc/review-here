@@ -1,0 +1,14 @@
+com\microservices\demo\elastic\query\web\client\config\WebSecurityConfig.class
+com\microservices\demo\elastic\query\web\client\api\error\handler\ElasticQueryWebClientErrorHandler.class
+com\microservices\demo\elastic\query\web\client\config\WebClientConfig.class
+com\microservices\demo\elastic\query\web\client\ElasticQueryWebClientApplication.class
+com\microservices\demo\elastic\query\web\client\service\impl\TwitterElasticQueryWebClient$1.class
+com\microservices\demo\elastic\query\web\client\service\impl\TwitterElasticQueryWebClient.class
+com\microservices\demo\elastic\query\web\client\model\ElasticQueryWebClientRequestModel.class
+com\microservices\demo\elastic\query\web\client\model\ElasticQueryWebClientResponseModel.class
+com\microservices\demo\elastic\query\web\client\model\ElasticQueryWebClientRequestModel$ElasticQueryWebClientRequestModelBuilder.class
+com\microservices\demo\elastic\query\web\client\exception\ElasticQueryWebClientException.class
+com\microservices\demo\elastic\query\web\client\config\ElasticQueryServiceInstanceListSupplierConfig.class
+com\microservices\demo\elastic\query\web\client\service\ElasticQueryWebClient.class
+com\microservices\demo\elastic\query\web\client\api\QueryController.class
+com\microservices\demo\elastic\query\web\client\model\ElasticQueryWebClientResponseModel$ElasticQueryWebClientResponseModelBuilder.class

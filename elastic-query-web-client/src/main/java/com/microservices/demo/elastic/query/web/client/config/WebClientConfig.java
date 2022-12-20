@@ -8,6 +8,7 @@ import io.netty.handler.timeout.ReadTimeoutHandler;
 import io.netty.handler.timeout.WriteTimeoutHandler;
 import org.apache.http.HttpHeaders;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
+import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -19,15 +20,16 @@ import reactor.netty.tcp.TcpClient;
 
 @Configuration
 @ComponentScan(basePackages = "com.microservices.demo.config")
+@LoadBalancerClient(name = "elastic-query-service", configuration = ElasticQueryServiceInstanceListSupplierConfig.class)
 public class WebClientConfig {
 
 
-    private final ElasticQueryWebClientConfigData webClientConfigData;
+    private final ElasticQueryWebClientConfigData.WebClient webClientConfigData;
 
     private final UserConfigData userConfigData;
 
 
-    public WebClientConfig(ElasticQueryWebClientConfigData webClientConfigData, UserConfigData userConfigData) {
+    public WebClientConfig(ElasticQueryWebClientConfigData.WebClient webClientConfigData, UserConfigData userConfigData) {
         this.webClientConfigData = webClientConfigData;
         this.userConfigData = userConfigData;
     }
@@ -38,23 +40,23 @@ public class WebClientConfig {
         return WebClient.builder()
                 .filter(ExchangeFilterFunctions
                         .basicAuthentication(userConfigData.getUsername(), userConfigData.getPassword()))
-                .baseUrl(webClientConfigData.getWebClient().getBaseUrl())
-                .defaultHeader(HttpHeaders.CONTENT_TYPE, webClientConfigData.getWebClient().getContentType())
-                .defaultHeader(HttpHeaders.ACCEPT, webClientConfigData.getWebClient().getAcceptType())
+                .baseUrl(webClientConfigData.getBaseUrl())
+                .defaultHeader(HttpHeaders.CONTENT_TYPE, webClientConfigData.getContentType())
+                .defaultHeader(HttpHeaders.ACCEPT, webClientConfigData.getAcceptType())
                 .clientConnector(new ReactorClientHttpConnector(HttpClient.from(getTcpClient())))
                 .codecs(clientCodecConfigurer ->
                         clientCodecConfigurer
                                 .defaultCodecs()
-                                .maxInMemorySize(webClientConfigData.getWebClient().getMaxInMemorySize()));
+                                .maxInMemorySize(webClientConfigData.getMaxInMemorySize()));
     }
 
     private TcpClient getTcpClient() {
 
         return TcpClient.create()
-                .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, webClientConfigData.getWebClient().getConnectTimeoutMs())
+                .option(ChannelOption.CONNECT_TIMEOUT_MILLIS, webClientConfigData.getConnectTimeoutMs())
                 .doOnConnected(conn -> conn
-                        .addHandlerLast(new ReadTimeoutHandler(webClientConfigData.getWebClient().getReadTimeoutMs()))
-                        .addHandlerLast(new WriteTimeoutHandler(webClientConfigData.getWebClient().getWriteTimeoutMs()))
+                        .addHandlerLast(new ReadTimeoutHandler(webClientConfigData.getReadTimeoutMs()))
+                        .addHandlerLast(new WriteTimeoutHandler(webClientConfigData.getWriteTimeoutMs()))
                 );
 
     }
