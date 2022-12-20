@@ -1,0 +1,498 @@
+2022-12-20 12:56:59 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 12:57:00 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 12:57:01 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=8c9d506e166c45bbc34c753d6547188e80281116, state=null
+2022-12-20 12:57:01 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 12:57:01 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 12:57:01 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=87623b00-4034-39a3-8e9c-37f454c18723
+2022-12-20 12:57:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-20 12:57:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-20 12:57:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 12:57:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 12:57:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-20 12:57:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 662 ms
+2022-12-20 12:57:01 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webClientConfig' defined in file [C:\Users\Sindroma\Desktop\review-project-main\elastic-query-web-client\target\classes\com\microservices\demo\elastic\query\web\client\config\WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-12-20 12:57:01 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-12-20 12:57:01 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-20 12:57:02 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.web.client.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClient' in your configuration.
+
+2022-12-20 13:06:54 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 13:06:54 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 13:06:55 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=8c9d506e166c45bbc34c753d6547188e80281116, state=null
+2022-12-20 13:06:55 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 13:06:55 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 13:06:55 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=87623b00-4034-39a3-8e9c-37f454c18723
+2022-12-20 13:06:55 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-20 13:06:55 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-20 13:06:55 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 13:06:55 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 13:06:55 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-20 13:06:55 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 565 ms
+2022-12-20 13:06:55 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientBuilder' defined in class path resource [com/microservices/demo/elastic/query/web/client/config/WebClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.reactive.function.client.WebClient$Builder]: Factory method 'webClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Username must not be null
+2022-12-20 13:06:55 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-12-20 13:06:55 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-20 13:06:55 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientBuilder' defined in class path resource [com/microservices/demo/elastic/query/web/client/config/WebClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.reactive.function.client.WebClient$Builder]: Factory method 'webClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Username must not be null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.elastic.query.web.client.ElasticQueryWebClientApplication.main(ElasticQueryWebClientApplication.java:13)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.reactive.function.client.WebClient$Builder]: Factory method 'webClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Username must not be null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Username must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.springframework.http.HttpHeaders.encodeBasicAuth(HttpHeaders.java:1834)
+	at org.springframework.web.reactive.function.client.ExchangeFilterFunctions.basicAuthentication(ExchangeFilterFunctions.java:103)
+	at com.microservices.demo.elastic.query.web.client.config.WebClientConfig.webClientBuilder(WebClientConfig.java:40)
+	at com.microservices.demo.elastic.query.web.client.config.WebClientConfig$$EnhancerBySpringCGLIB$$cc586ac4.CGLIB$webClientBuilder$0(<generated>)
+	at com.microservices.demo.elastic.query.web.client.config.WebClientConfig$$EnhancerBySpringCGLIB$$cc586ac4$$FastClassBySpringCGLIB$$76102ab.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.microservices.demo.elastic.query.web.client.config.WebClientConfig$$EnhancerBySpringCGLIB$$cc586ac4.webClientBuilder(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+2022-12-20 13:07:31 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 13:07:31 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 13:07:32 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=8c9d506e166c45bbc34c753d6547188e80281116, state=null
+2022-12-20 13:07:32 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 13:07:32 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 13:07:33 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=87623b00-4034-39a3-8e9c-37f454c18723
+2022-12-20 13:07:44 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-12-20 13:07:44 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-12-20 13:07:44 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 13:07:44 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 13:07:48 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-12-20 13:07:48 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 16523 ms
+2022-12-20 13:09:17 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientBuilder' defined in class path resource [com/microservices/demo/elastic/query/web/client/config/WebClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.reactive.function.client.WebClient$Builder]: Factory method 'webClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Username must not be null
+2022-12-20 13:09:17 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-12-20 13:09:17 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-20 13:09:17 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'webClientBuilder' defined in class path resource [com/microservices/demo/elastic/query/web/client/config/WebClientConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.reactive.function.client.WebClient$Builder]: Factory method 'webClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Username must not be null
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.microservices.demo.elastic.query.web.client.ElasticQueryWebClientApplication.main(ElasticQueryWebClientApplication.java:13)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.web.reactive.function.client.WebClient$Builder]: Factory method 'webClientBuilder' threw exception; nested exception is java.lang.IllegalArgumentException: Username must not be null
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 20 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Username must not be null
+	at org.springframework.util.Assert.notNull(Assert.java:201)
+	at org.springframework.http.HttpHeaders.encodeBasicAuth(HttpHeaders.java:1834)
+	at org.springframework.web.reactive.function.client.ExchangeFilterFunctions.basicAuthentication(ExchangeFilterFunctions.java:103)
+	at com.microservices.demo.elastic.query.web.client.config.WebClientConfig.webClientBuilder(WebClientConfig.java:40)
+	at com.microservices.demo.elastic.query.web.client.config.WebClientConfig$$EnhancerBySpringCGLIB$$4b25ec29.CGLIB$webClientBuilder$0(<generated>)
+	at com.microservices.demo.elastic.query.web.client.config.WebClientConfig$$EnhancerBySpringCGLIB$$4b25ec29$$FastClassBySpringCGLIB$$baf01922.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.microservices.demo.elastic.query.web.client.config.WebClientConfig$$EnhancerBySpringCGLIB$$4b25ec29.webClientBuilder(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 21 common frames omitted
+2022-12-20 13:09:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 13:09:41 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 13:09:42 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=1b97efc852b042a854e19142345a78451fcea829, state=null
+2022-12-20 13:09:42 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 13:09:42 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 13:09:56 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=87623b00-4034-39a3-8e9c-37f454c18723
+2022-12-20 13:10:08 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-12-20 13:10:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:10:08 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 13:10:08 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 13:10:12 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-12-20 13:10:12 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 30359 ms
+2022-12-20 13:11:29 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7971c2a9, org.springframework.security.web.context.SecurityContextPersistenceFilter@764fffa0, org.springframework.security.web.header.HeaderWriterFilter@7c7e73c5, org.springframework.security.web.csrf.CsrfFilter@329dc214, org.springframework.security.web.authentication.logout.LogoutFilter@5e599100, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@269222ae, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77524ca7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4ed18798, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fd39436, org.springframework.security.web.session.SessionManagementFilter@5b733ef7, org.springframework.security.web.access.ExceptionTranslationFilter@6a98f353, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ec88f9e]
+2022-12-20 13:11:39 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:11:42 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-12-20 13:11:57 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:11:58 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elastic-query-web-client'
+2022-12-20 13:11:59 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 139.385 seconds (JVM running for 140.016)
+2022-12-20 13:12:19 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:13:43 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 13:13:44 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 13:13:44 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=1b97efc852b042a854e19142345a78451fcea829, state=null
+2022-12-20 13:13:44 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 13:13:45 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 13:13:45 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=87623b00-4034-39a3-8e9c-37f454c18723
+2022-12-20 13:13:45 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-12-20 13:13:45 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:13:45 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 13:13:45 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 13:13:45 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-12-20 13:13:45 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 562 ms
+2022-12-20 13:13:45 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webClientConfig' defined in file [C:\Users\Sindroma\Desktop\review-project-main\elastic-query-web-client\target\classes\com\microservices\demo\elastic\query\web\client\config\WebClientConfig.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2022-12-20 13:13:45 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2022-12-20 13:13:45 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-12-20 13:13:45 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.microservices.demo.elastic.query.web.client.config.WebClientConfig required a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClient' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.config.ElasticQueryWebClientConfigData$WebClient' in your configuration.
+
+2022-12-20 13:14:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 13:14:29 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 13:14:30 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=1b97efc852b042a854e19142345a78451fcea829, state=null
+2022-12-20 13:14:30 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 13:14:30 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 13:14:30 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=87623b00-4034-39a3-8e9c-37f454c18723
+2022-12-20 13:14:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-12-20 13:14:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:14:30 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 13:14:30 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 13:14:30 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-12-20 13:14:30 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 558 ms
+2022-12-20 13:14:30 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d9c45ee, org.springframework.security.web.context.SecurityContextPersistenceFilter@b14b60a, org.springframework.security.web.header.HeaderWriterFilter@28393e82, org.springframework.security.web.csrf.CsrfFilter@11ede87f, org.springframework.security.web.authentication.logout.LogoutFilter@1625789b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@62d40e31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1c297897, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4fa86cb8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31da0434, org.springframework.security.web.session.SessionManagementFilter@634ca3e7, org.springframework.security.web.access.ExceptionTranslationFilter@4aebee4b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6221b13b]
+2022-12-20 13:14:30 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:14:31 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-12-20 13:14:31 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:14:31 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elastic-query-web-client'
+2022-12-20 13:14:31 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 3.354 seconds (JVM running for 3.844)
+2022-12-20 13:14:57 [http-nio-8184-exec-1] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-20 13:14:57 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-20 13:14:57 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2022-12-20 13:15:15 [http-nio-8184-exec-4] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/elastic-query-web-client] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:250)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:615)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:90)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:169)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2022-12-20 13:15:24 [http-nio-8184-exec-5] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/elastic-query-web-client] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:250)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:615)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:90)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:169)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2022-12-20 13:16:07 [http-nio-8184-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [/elastic-query-web-client] threw exception
+java.lang.IllegalArgumentException: There is no PasswordEncoder mapped for the id "null"
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder$UnmappedIdPasswordEncoder.matches(DelegatingPasswordEncoder.java:250)
+	at org.springframework.security.crypto.password.DelegatingPasswordEncoder.matches(DelegatingPasswordEncoder.java:198)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$LazyPasswordEncoder.matches(WebSecurityConfigurerAdapter.java:615)
+	at org.springframework.security.authentication.dao.DaoAuthenticationProvider.additionalAuthenticationChecks(DaoAuthenticationProvider.java:90)
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:166)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:219)
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:169)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2022-12-20 13:17:18 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:17:21 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 13:17:21 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 13:17:22 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=1b97efc852b042a854e19142345a78451fcea829, state=null
+2022-12-20 13:17:22 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 13:17:22 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 13:17:22 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5f21d366-b36a-37a0-b211-35f7f530591b
+2022-12-20 13:17:23 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-12-20 13:17:23 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:17:23 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 13:17:23 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 13:17:23 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-12-20 13:17:23 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 561 ms
+2022-12-20 13:17:23 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cd6b1bd, org.springframework.security.web.context.SecurityContextPersistenceFilter@7f5614f9, org.springframework.security.web.header.HeaderWriterFilter@237add, org.springframework.security.web.csrf.CsrfFilter@7cf63b9a, org.springframework.security.web.authentication.logout.LogoutFilter@48cb2d73, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2f9dda71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c3f1658, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@76973a6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@443cdaa4, org.springframework.security.web.session.SessionManagementFilter@d653e41, org.springframework.security.web.access.ExceptionTranslationFilter@6274f21c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@37af24cb]
+2022-12-20 13:17:23 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:17:23 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-12-20 13:17:24 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:17:24 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elastic-query-web-client'
+2022-12-20 13:17:24 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 3.321 seconds (JVM running for 3.826)
+2022-12-20 13:17:32 [http-nio-8184-exec-1] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-20 13:17:32 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-20 13:17:32 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2022-12-20 13:17:49 [http-nio-8184-exec-2] INFO  c.m.d.e.q.w.c.api.QueryController - Query by text: test
+2022-12-20 13:17:50 [http-nio-8184-exec-5] INFO  c.m.d.e.q.w.c.api.QueryController - Query by text: 
+2022-12-20 13:17:57 [http-nio-8184-exec-6] INFO  c.m.d.e.q.w.c.api.QueryController - Query by text: test
+2022-12-20 13:18:59 [http-nio-8184-exec-8] INFO  c.m.d.e.q.w.c.api.QueryController - Query by text: asd
+2022-12-20 13:19:01 [http-nio-8184-exec-9] INFO  c.m.d.e.q.w.c.api.QueryController - Query by text: test
+2022-12-20 13:19:04 [http-nio-8184-exec-10] INFO  c.m.d.e.q.w.c.api.QueryController - Query by text: multi
+2022-12-20 13:19:40 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:43:40 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 13:43:40 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 13:43:41 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=1b71d4e068eee1a6b4bc567ffbba72e699889f4a, state=null
+2022-12-20 13:43:41 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 13:43:41 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 13:43:42 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2aff110c-1deb-34fa-b165-66fd0be93e15
+2022-12-20 13:43:42 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-12-20 13:43:42 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:43:42 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 13:43:42 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 13:43:42 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-12-20 13:43:42 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 580 ms
+2022-12-20 13:43:42 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2d28fb02, org.springframework.security.web.context.SecurityContextPersistenceFilter@1a9ec80e, org.springframework.security.web.header.HeaderWriterFilter@5eb0a686, org.springframework.security.web.csrf.CsrfFilter@35cec305, org.springframework.security.web.authentication.logout.LogoutFilter@31f77791, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@17222c11, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f6b53ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@650aa077, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6db328f8, org.springframework.security.web.session.SessionManagementFilter@13866329, org.springframework.security.web.access.ExceptionTranslationFilter@6c3f1658, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5bda157e]
+2022-12-20 13:43:42 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:43:42 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-12-20 13:43:43 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:43:43 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elastic-query-web-client'
+2022-12-20 13:43:43 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 3.581 seconds (JVM running for 4.138)
+2022-12-20 13:44:05 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:44:24 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 13:44:24 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 13:44:25 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=1b71d4e068eee1a6b4bc567ffbba72e699889f4a, state=null
+2022-12-20 13:44:25 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 13:44:25 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 13:44:25 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2aff110c-1deb-34fa-b165-66fd0be93e15
+2022-12-20 13:44:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-12-20 13:44:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:44:26 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 13:44:26 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 13:44:26 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-12-20 13:44:26 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 709 ms
+2022-12-20 13:44:26 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@13213f26, org.springframework.security.web.context.SecurityContextPersistenceFilter@1625789b, org.springframework.security.web.header.HeaderWriterFilter@3b78c683, org.springframework.security.web.csrf.CsrfFilter@1a7cb3a4, org.springframework.security.web.authentication.logout.LogoutFilter@7c11d32, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5bb911c1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c4d2c44, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14b31e37, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e4162bc, org.springframework.security.web.session.SessionManagementFilter@71a4f441, org.springframework.security.web.access.ExceptionTranslationFilter@446e7065, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3b41e1bf]
+2022-12-20 13:44:26 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:44:26 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-12-20 13:44:27 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:44:27 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elastic-query-web-client'
+2022-12-20 13:44:27 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 3.735 seconds (JVM running for 4.375)
+2022-12-20 13:44:55 [http-nio-8184-exec-1] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-20 13:44:55 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-20 13:44:55 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2022-12-20 13:45:09 [http-nio-8184-exec-5] INFO  c.m.d.e.q.w.c.api.QueryController - Query by text: kafka
+2022-12-20 13:45:09 [http-nio-8184-exec-5] INFO  c.m.d.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text kafka
+2022-12-20 13:45:49 [http-nio-8184-exec-8] INFO  c.m.d.e.q.w.c.api.QueryController - Query by text: kafka
+2022-12-20 13:45:49 [http-nio-8184-exec-8] INFO  c.m.d.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text kafka
+2022-12-20 13:46:54 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:47:52 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.5.Final
+2022-12-20 13:47:52 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Fetching config from server at : http://localhost:8888
+2022-12-20 13:47:53 [main] INFO  o.s.c.c.c.ConfigServicePropertySourceLocator - Located environment: name=elastic-query-web-client,config-client, profiles=[elastic_query_web], label=null, version=1b71d4e068eee1a6b4bc567ffbba72e699889f4a, state=null
+2022-12-20 13:47:53 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration - Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client-elastic_query_web.yml'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/eno-lc/spring-cloud-config-server-repository/config-client.yml'}]
+2022-12-20 13:47:53 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - The following profiles are active: elastic_query_web
+2022-12-20 13:47:53 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=2aff110c-1deb-34fa-b165-66fd0be93e15
+2022-12-20 13:47:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8184 (http)
+2022-12-20 13:47:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:47:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2022-12-20 13:47:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.38]
+2022-12-20 13:47:53 [main] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring embedded WebApplicationContext
+2022-12-20 13:47:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 579 ms
+2022-12-20 13:47:54 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6839203b, org.springframework.security.web.context.SecurityContextPersistenceFilter@2eda2062, org.springframework.security.web.header.HeaderWriterFilter@110e9982, org.springframework.security.web.csrf.CsrfFilter@6274f21c, org.springframework.security.web.authentication.logout.LogoutFilter@707865bd, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@57fdb8a4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7fd4e815, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62d40e31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d28fb02, org.springframework.security.web.session.SessionManagementFilter@c4d2c44, org.springframework.security.web.access.ExceptionTranslationFilter@480cbe2e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e5ddfbc]
+2022-12-20 13:47:54 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2022-12-20 13:47:54 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2022-12-20 13:47:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8184"]
+2022-12-20 13:47:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8184 (http) with context path '/elastic-query-web-client'
+2022-12-20 13:47:54 [main] INFO  c.m.d.e.q.w.c.ElasticQueryWebClientApplication - Started ElasticQueryWebClientApplication in 3.393 seconds (JVM running for 3.875)
+2022-12-20 13:48:13 [http-nio-8184-exec-1] INFO  o.a.c.c.C.[.[.[/elastic-query-web-client] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-12-20 13:48:13 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-12-20 13:48:13 [http-nio-8184-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2022-12-20 13:48:47 [http-nio-8184-exec-3] INFO  c.m.d.e.q.w.c.api.QueryController - Querying with text kafka
+2022-12-20 13:48:47 [http-nio-8184-exec-3] INFO  c.m.d.e.q.w.c.s.i.TwitterElasticQueryWebClient - Querying by text kafka
+2022-12-20 13:50:26 [SpringContextShutdownHook] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'

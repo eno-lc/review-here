@@ -6,6 +6,8 @@
     <file url="file://$PROJECT_DIR$/common-util/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/elastic-query-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elastic-query-web-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/elastic-query-web-client/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/elastic/elastic-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/elastic/elastic-index-client/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/elastic/elastic-model/src/main/java" charset="UTF-8" />

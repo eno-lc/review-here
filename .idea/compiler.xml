@@ -22,6 +22,7 @@
         <module name="elastic-query-client" />
         <module name="elastic-query-service" />
         <module name="twitter-to-kafka-service" />
+        <module name="elastic-query-web-client" />
         <module name="elastic-model" />
       </profile>
     </annotationProcessing>
@@ -38,6 +39,7 @@
       <module name="elastic-model" options="-parameters" />
       <module name="elastic-query-client" options="-parameters" />
       <module name="elastic-query-service" options="-parameters" />
+      <module name="elastic-query-web-client" options="-parameters" />
       <module name="kafka" options="-parameters" />
       <module name="kafka-admin" options="-parameters" />
       <module name="kafka-consumer" options="-parameters" />
